@@ -16,7 +16,7 @@ public class PersonRestController {
     PersonServiceImpl service;
 
     @RequestMapping("/person/list")
-    List<Person> showAll(){
+    public List<Person> showAll(){
         return service.getAll();
     }
 }

@@ -18,7 +18,7 @@ public class ProductRestController {
     ProductServiceImpl productService;
 
     @RequestMapping("/product/list")
-    List<Product> showAll(){
+    public  List<Product> showAll(){
         return productService.getAll();
     }
 }

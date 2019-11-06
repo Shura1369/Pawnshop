@@ -16,7 +16,7 @@ public class PassportRestController {
     PassportServiceImpl service;
 
     @RequestMapping("/passport/list")
-    List<Passport> showAll(){
+    public  List<Passport> showAll(){
         return service.getAll();
     }
 
